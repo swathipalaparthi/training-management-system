@@ -1,2 +1,2 @@
 # training-management-system
-TMS is a platform for learning courses in the training content 
+It is a learning platform that provides multiple courses and training content
