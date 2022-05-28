@@ -1,0 +1,74 @@
+.accordian {
+    margin-top: 8px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+}
+
+.accordian:hover {
+    background: rgba(227, 186, 38, 0.2);
+}
+
+.accordian__label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordian__label p {
+    width: 95%;
+    font-size: var(--medium-text);
+    line-height: 150%;
+}
+
+.accordian__dropdown {
+    width: 32px;
+}
+
+.accordian__label img {
+    padding: 0 8px;
+    transition: transform 0.4s;
+}
+
+.accordian__content {
+    border-top: 1px solid #ccc;
+    font-size: var(--medium-text);
+    line-height: 150%;
+    display: none;
+}
+
+.accordian__video {
+    font-size: 15px;
+    line-height: 150%;
+    padding: 8px 0;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+    display: block;
+}
+
+.accordian__test-btn {
+    text-decoration: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    background: rgba(227, 186, 38, 0.8);
+    border-radius: 24px;
+    color: #000;
+}
+
+.accordian__test-btn:hover {
+    background: rgba(227, 186, 38, 1);
+}
+
+.accordian__input {
+    display: none;
+}
+
+.accordian__input:checked~.accordian__content {
+    display: block;
+}
+
+.accordian__input:checked~.accordian__label img {
+    transform: translateY(-50%) rotate(0.5turn);
+}

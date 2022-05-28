@@ -1,0 +1,18 @@
+.footer {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    box-shadow: 0 2px 10px var(--color-box-shadow);
+    background: linear-gradient(to right, white 10%, rgba(128, 0, 128, 0.582), purple);
+  }
+  .footer__user{
+      display:flex;
+      flex-direction:row;
+  };
+  .footer__image{
+    width:30px;
+    height:30px;
+    margin-right:20px;
+  }
