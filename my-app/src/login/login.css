@@ -1,0 +1,79 @@
+.app {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+input[type="text"],
+input[type="password"] {
+    height: 25px;
+    width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    background: #01d28e;
+    border-radius: 2px;
+    border: none;
+    color: #fff;
+    width: 100px;
+    padding: 10px 20px;
+}
+.signup{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.signup img{
+    width: 64px;
+}
+.button-container:hover {
+    background: #6cf0c2;
+}
+.reg-link {
+    color: #5101d2;
+    cursor: pointer;
+}
+
+.login-form {
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 25%;
+    height: 50%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px;
+}
