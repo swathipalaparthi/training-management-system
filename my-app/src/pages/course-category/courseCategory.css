@@ -1,0 +1,12 @@
+.courseCat {
+    padding: 2rem 0;
+    margin: auto auto;
+    max-width: 90%;
+}
+
+.courseCat__container {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
