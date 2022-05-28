@@ -1,19 +1,20 @@
+import "./events.css"
 export const Events = () => {
     const config = [
         {
-            eventName:"",
-            eventLink:"",
-            eventTime:""
+            eventName:"End to End testing",
+            eventLink:"https://www.youtube.com/watch?v=68xvfrxlEYo",
+            eventTime:"@4PM"
         },
         {
-            eventName:"",
-            eventLink:"",
-            eventTime:""
+            eventName:"React Functional Components",
+            eventLink:"https://meet.google.com/nid-bjby-tpp",
+            eventTime:"@5PM"
         },
         {
-            eventName:"",
-            eventLink:"",
-            eventTime:""
+            eventName:"Javscript vs Typescript",
+            eventLink:"https://meet.google.com/nid-bjby-tpp",
+            eventTime:"@6PM"
         },
     ]
     
@@ -21,7 +22,7 @@ export const Events = () => {
         <>
             {config.map(item=>{
                 return (
-                    <a href={item.eventLink}>
+                    <a href={item.eventLink} className="events__container">
                         <div>{item.eventName}</div>
                         <div>{item.eventTime}</div>
                     </a>

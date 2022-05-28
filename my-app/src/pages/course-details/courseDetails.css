@@ -1,0 +1,50 @@
+.course {
+    padding: 1rem 4rem;
+}
+
+.course__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.course__title {
+    flex-basis: 70%;
+}
+
+.course__start-learning {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: var(--color-btn);
+    opacity: 0.8;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.course__start-learning:hover {
+    opacity: 1;
+}
+
+.course__progress {
+    flex-basis: 22%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.course__body {
+    margin: 20px 0;
+    width: 70%;
+}
+
+.course__description p {
+    margin-top: 16px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.course__lectures {
+    margin-top: 32px;
+}

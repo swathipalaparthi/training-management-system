@@ -1,13 +1,18 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import { Footer } from './common/footer/Footer';
+import Header from './common/header/Header';
 import { TabComponent } from './common/tab-component/TabComponent';
 import { Admin } from './pages/admin/Admin';
+import CourseCategory from './pages/course-category/CourseCategory';
+import CourseDetails from './pages/course-details/CourseDetails';
+import UserDashboard from './pages/user-dashboard/UserDashboard';
 
 const routeConfig = [
   {
     path:'/',
-    component:Admin
+    component:UserDashboard
   },
   {
     path:'admin',
@@ -18,17 +23,22 @@ const routeConfig = [
     component:Admin
   },
   {
-    path:'courses',
-    component:Admin
+    path:'courses/:id',
+    component:CourseDetails
   },
   {
-    path:'course-details',
-    component:Admin
+    path:'courses',
+    component:UserDashboard
+  },
+  {
+    path:'coursecategory',
+    component:CourseCategory
   },
 ]
 function App() {
   return (
     <div className="App">
+      <Header/>
       <Routes>
         {routeConfig.map(item=>{
           return <Route path={item.path} element={<item.component/>}/>
@@ -40,8 +50,9 @@ function App() {
         <Route path="course-details" element={ <CourseDetails/> } />
         <Route path="courses" element={ <CourseCatrgories/> } /> */}
       </Routes>
+      <Footer/>
     </div>
   );
-}
+};
 
 export default App;
