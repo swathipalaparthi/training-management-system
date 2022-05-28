@@ -1,4 +1,4 @@
-import { TabComponent } from "../../components/tab-component/TabComponent"
+import { TabComponent } from "../../common/tab-component/TabComponent"
 import { CourseTab } from "./CourseTab"
 import { EventsTab } from "./EventsTab"
 import { TopicsTab } from "./TopicsTab"
