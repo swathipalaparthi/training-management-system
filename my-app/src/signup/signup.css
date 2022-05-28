@@ -39,6 +39,7 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
+    width: 300px;
 }
 
 .formField input {
@@ -67,4 +68,7 @@
 
 button:hover {
     background: #6cf0c2;
+}
+.signup__title{
+    text-align: center;
 }

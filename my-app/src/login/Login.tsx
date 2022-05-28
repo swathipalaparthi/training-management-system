@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
+import { useNavigate } from "react-router-dom";
 
 import "./login.css";
 
 function Login() {
   const [errorMessages, setErrorMessages] = useState({ name: "", message: "" });
   const [isSubmitted, setIsSubmitted] = useState(false);
-
+  const navigate = useNavigate()
   const database = [
     {
       username: "user1",
@@ -72,7 +73,9 @@ function Login() {
       <div className="login-form">
         <div className="title">Login</div>
         <div>Don't have any account yet?</div>
-        <span className="reg-link">Register now</span>
+        <span className="reg-link" onClick={()=>{
+          navigate('sign-up')
+        }}>Register now</span>
         {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
       </div>
     </div>
