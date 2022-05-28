@@ -1,0 +1,45 @@
+.userDash {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.userDashLeft {
+  flex-basis: 72%;
+}
+
+.userDashRight {
+  flex-basis: 24%;
+}
+
+.userDash__courses {
+  margin-bottom: 24px;
+}
+
+.userDash__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userDash__view-btn {
+  padding: 8px 16px;
+  border-radius: 24px;
+  background: var(--color-card-title);
+  color: white;
+}
+
+.userDash__title {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.userDash__container {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
