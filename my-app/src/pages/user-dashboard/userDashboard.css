@@ -23,11 +23,17 @@
   align-items: center;
 }
 
-.userDash__view-btn {
+/* .userDash__view-btn {
   padding: 8px 16px;
   border-radius: 24px;
-  background: var(--color-card-title);
+  background: var(--color-violet);
   color: white;
+} */
+
+.userDash__view-btn {
+  background: none;
+  color: var(--color-violet);
+  font-weight: bold;
 }
 
 .userDash__title {
@@ -42,4 +48,14 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.userDash__evnets {
+  padding-top: 20px;
+}
+
+@media (max-width: 1280px) {
+  .userDash__container {
+      gap: 12px;
+    }
 }

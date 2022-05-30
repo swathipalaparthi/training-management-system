@@ -3,6 +3,8 @@ import "./courseCategory.css";
 import Card from "../../common/card/Card";
 import { useParams } from "react-router-dom";
 import { courses } from "../../constants/courses";
+import Header from "../../common/header/Header";
+import { Footer } from "../../common/footer/Footer";
 
 const TITLES = [
   "All Your Assigned Courses Goes Here",
@@ -26,20 +28,24 @@ const CourseCategory = () => {
   }
 
   return (
-    <div className="courseCat">
-      <h1 className="courseCat__title">{title}</h1>
+    <>
+      <Header />
+      <div className="courseCat">
+        <h1 className="courseCat__title">{title}</h1>
 
-      <div className="courseCat__container">
-        {data.map((course: any) => (
-          <Card
-            thumbnail={course.thumbnail}
-            courseName={course.courseName}
-            description={course.description}
-            id={course.id}
-          />
-        ))}
+        <div className="courseCat__container">
+          {data.map((course: any) => (
+            <Card
+              thumbnail={course.thumbnail}
+              courseName={course.courseName}
+              description={course.description}
+              id={course.id}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 

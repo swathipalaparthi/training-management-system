@@ -1,47 +1,47 @@
-.app {
-    font-family: sans-serif;
+.login {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
     height: 100vh;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-input[type="text"],
-input[type="password"] {
+.input-container input {
     height: 25px;
     width: 300px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: 0;
+    border: 1px solid #ccc;
+    padding: 18px 10px;
 }
 
 .button-container {
     margin-top: 10px;
     cursor: pointer;
-    font-size: 15px;
-    background: #01d28e;
+    background: var(--color-pink);
     border-radius: 2px;
     border: none;
     color: #fff;
     width: 100px;
     padding: 10px 20px;
+    font-weight: bold;
 }
-.signup{
+
+.login__logo {
     display: flex;
     align-items: center;
-    gap: 5px;
+    flex-direction: column;
+    gap: 8px;
     font-weight: 600;
     font-size: 18px;
 }
-.signup img{
+
+.login__logo img {
     width: 64px;
 }
-.button-container:hover {
-    background: #6cf0c2;
-}
+
 .reg-link {
-    color: #5101d2;
+    color: var(--color-violet);
     cursor: pointer;
 }
 
@@ -55,11 +55,13 @@ input[type="password"] {
     width: 25%;
     height: 50%;
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .error {
     color: red;
     font-size: 12px;

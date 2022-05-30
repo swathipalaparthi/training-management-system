@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import { useNavigate } from "react-router-dom";
 
@@ -7,7 +7,7 @@ import "./login.css";
 function Login() {
   const [errorMessages, setErrorMessages] = useState({ name: "", message: "" });
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const database = [
     {
       username: "user1",
@@ -20,9 +20,15 @@ function Login() {
   ];
 
   const errors = {
-    uname: "invalid email address",
-    pass: "invalid password",
+    uname: "Invalid Email address",
+    pass: "Invalid Password",
   };
+
+  useEffect(() => {
+    if (isSubmitted) {
+      navigate("dashboard");
+    }
+  }, [isSubmitted]);
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
@@ -40,6 +46,7 @@ function Login() {
       setErrorMessages({ name: "uname", message: errors.uname });
     }
   };
+
   const name: string = "";
   const renderErrorMessage = (name: string) =>
     name === errorMessages.name && (
@@ -65,17 +72,22 @@ function Login() {
   );
 
   return (
-    <div className="app">
-      <div className="signup">
+    <div className="login">
+      <div className="login__logo">
         <img src="logo.png" />
         <span>FineMentor</span>
       </div>
       <div className="login-form">
         <div className="title">Login</div>
         <div>Don't have any account yet?</div>
-        <span className="reg-link" onClick={()=>{
-          navigate('sign-up')
-        }}>Register now</span>
+        <span
+          className="reg-link"
+          onClick={() => {
+            navigate("sign-up");
+          }}
+        >
+          Register now
+        </span>
         {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
       </div>
     </div>

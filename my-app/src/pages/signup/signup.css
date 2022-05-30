@@ -1,6 +1,6 @@
 .signup {
     max-width: 900px;
-    margin: 4rem auto 0;
+    margin: 5rem auto 0;
     padding: 2rem;
     display: flex;
     align-items: center;
@@ -26,6 +26,11 @@
     flex: 1;
 }
 
+
+.signup__logo img {
+    width: 80px;
+}
+
 .signup__form {
     flex: 2;
     background-color: white;
@@ -45,19 +50,19 @@
 .formField input {
     outline: 0;
     border: 1px solid #ccc;
-    padding: 6px;
+    padding: 8px;
 }
 
 .formField input:focus {
-    border: 1px solid rgba(0, 0, 255, 0.4);
+    border: 1px solid var(--color-violet-lighter);
 }
 
 
 .signup-btn {
-    margin-top: 16px;
+    margin-top: 32px;
     cursor: pointer;
     font-size: 15px;
-    background: #01d28e;
+    background: var(--color-violet);
     border: none;
     border-radius: 2px;
     color: #fff;
@@ -66,9 +71,6 @@
     font-weight: bold;
 }
 
-button:hover {
-    background: #6cf0c2;
-}
-.signup__title{
+.signup__title {
     text-align: center;
 }

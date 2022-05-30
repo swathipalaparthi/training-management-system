@@ -7,8 +7,7 @@ export const courses = [
     courseName: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, sunt. Saepe architecto, odio reiciendis dolorem maxime sit voluptas aperiam dolores quae, doloribus ipsa maiores illo quaerat culpa iure. Iusto, dolorem.",
-
-    courseStatus: "In Progress",
+    courseStatus: "Completed",
   },
   {
     id: 2,
@@ -16,8 +15,7 @@ export const courses = [
     courseName: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, sunt. Saepe architecto, odio reiciendis dolorem maxime sit voluptas aperiam dolores quae, doloribus ipsa maiores illo quaerat culpa iure. Iusto, dolorem.",
-
-    courseStatus: "In Progress",
+    courseStatus: "Completed",
   },
   {
     id: 3,
@@ -25,18 +23,15 @@ export const courses = [
     courseName: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, sunt. Saepe architecto, odio reiciendis dolorem maxime sit voluptas aperiam dolores quae, doloribus ipsa maiores illo quaerat culpa iure. Iusto, dolorem.",
-
     courseStatus: "In Progress",
   },
-
   {
     id: 4,
     thumbnail: cardImg,
     courseName: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, sunt. Saepe architecto, odio reiciendis dolorem maxime sit voluptas aperiam dolores quae, doloribus ipsa maiores illo quaerat culpa iure. Iusto, dolorem.",
-
-    courseStatus: "In Progress",
+    courseStatus: "Completed",
   },
   {
     id: 5,
@@ -44,7 +39,14 @@ export const courses = [
     courseName: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, sunt. Saepe architecto, odio reiciendis dolorem maxime sit voluptas aperiam dolores quae, doloribus ipsa maiores illo quaerat culpa iure. Iusto, dolorem.",
-
-    courseStatus: "In Progress",
+    courseStatus: "Completed",
+  },
+  {
+    id: 6,
+    thumbnail: cardImg,
+    courseName: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, sunt. Saepe architecto, odio reiciendis dolorem maxime sit voluptas aperiam dolores quae, doloribus ipsa maiores illo quaerat culpa iure. Iusto, dolorem.",
+    courseStatus: "Completed",
   },
 ];

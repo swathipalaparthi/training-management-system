@@ -1,3 +1,4 @@
+/* Bootstrap Icon */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 
 /* Roboto Font Family */
@@ -17,13 +18,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-/* Bootstrap Icon */
 
 :root {
-  --color-btn: #e76495;
-  --color-card-title: #6a67ce;
+  --color-pink: #e76495;
+  --color-violet: #6a67ce;
   --color-text-secondary: grey;
   --color-box-shadow: #caa7d7;
+  --color-violet-lighter: #6a67ce41;
 
   --heading-text: 32px;
   --subheading-text: 24px;
@@ -49,11 +50,6 @@ button {
   cursor: pointer;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -63,7 +59,7 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-input[type="number"]:focus{
+input[type="number"]:focus {
   border: none;
   outline: none;
 }
